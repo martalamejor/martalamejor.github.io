@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Recetas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        h1 {
+            color: #2a3d66;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ffebcd;
+            padding: 10px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2a3d66;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .receta {
+            width: 45%;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .receta img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .receta h2 {
+            color: #ff6347;
+        }
+
+        .tabla {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .tabla, .tabla th, .tabla td {
+            border: 1px solid #ddd;
+        }
+
+        .tabla th, .tabla td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .tabla-sin-bordes {
+            border: none;
+        }
+
+        .gif {
+            display: block;
+            margin: 20px auto;
+            width: 60%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2a3d66;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Título principal -->
+    <header>
+        <h1>Recetas Deliciosas</h1>
+    </header>
+
+    <!-- Índice horizontal -->
+    <nav>
+        <table style="width: 100%; table-layout: fixed;">
+            <tr>
+                <td><a href="#receta1">Receta 1</a></td>
+                <td><a href="#receta2">Receta 2</a></td>
+                <td><a href="#ingredientes">Ingredientes</a></td>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="content">
+
+        <!-- Receta 1 -->
+        <section id="receta1" class="receta">
+            <h2>Receta 1: Pasta Alfredo</h2>
+            <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/4726898/2147483647/strip/true/crop/672x672+264+0/resize/1000x1000!/format/webp/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.us-east-1.amazonaws.com%2Fbrightspot%2F52%2F07%2Fd97ae147432d92b871af33ad3dea%2Fpasta-alfredo-fettuccine.jpeg">
+            <p><strong>Descripción:</strong> Una deliciosa pasta con una salsa cremosa de queso parmesano.</p>
+
+            <!-- Lista ordenada -->
+            <h3>Instrucciones:</h3>
+            <ol>
+                <li>Cocer la pasta en agua con sal.</li>
+                <li>Derretir la mantequilla y añadir el ajo.</li>
+                <li>Agregar la crema y el queso parmesano.</li>
+                <li>Mezclar la pasta con la salsa y servir.</li>
+            </ol>
+
+            <!-- Lista desordenada -->
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>1 paquete de pasta</li>
+                <li>100 g de mantequilla</li>
+                <li>200 ml de crema de leche</li>
+                <li>150 g de queso parmesano</li>
+            </ul>
+        </section>
+
+        <!-- Receta 2 -->
+        <section id="receta2" class="receta">
+            <h2>Receta 2: Tarta de Manzana</h2>
+            <img src="https://imag.bonviveur.com/tarta-de-manzana.webp">
+            <p><strong>Descripción:</strong> Una tarta casera con un toque de canela y manzanas frescas.</p>
+
+            <!-- Lista ordenada -->
+            <h3>Instrucciones:</h3>
+            <ol>
+                <li>Precalentar el horno a 180°C.</li>
+                <li>Mezclar los ingredientes para la masa.</li>
+                <li>Colocar las manzanas en la base y cubrir con la masa.</li>
+                <li>Hornear durante 45 minutos o hasta dorar.</li>
+            </ol>
+
+            <!-- Lista desordenada -->
+            <h3>Ingredientes:</h3>
+            <ul>
+                <li>2 manzanas</li>
+                <li>250 g de harina</li>
+                <li>100 g de mantequilla</li>
+                <li>50 g de azúcar</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- Tabla con bordes -->
+    <h3>Tabla con Ingredientes Comunes</h3>
+    <table class="tabla">
+        <tr>
+            <th>Ingrediente</th>
+            <th>Cantidad</th>
+        </tr>
+        <tr>
+            <td>Harina</td>
+            <td>250 g</td>
+        </tr>
+        <tr>
+            <td>Mantequilla</td>
+            <td>100 g</td>
+        </tr>
+        <tr>
+            <td>Azúcar</td>
+            <td>50 g</td>
+        </tr>
+    </table>
+
+    <!-- Tabla sin bordes -->
+    <h3>Tabla sin Bordes</h3>
+    <table class="tabla tabla-sin-bordes">
+        <tr>
+            <td>Harina</td>
+            <td>250 g</td>
+        </tr>
+        <tr>
+            <td>Mantequilla</td>
+            <td>100 g</td>
+        </tr>
+        <tr>
+            <td>Azúcar</td>
+            <td>50 g</td>
+        </tr>
+    </table>
+
+    <!-- Gif animado -->
+    <img class="gif" src="https://i.gifer.com/W9KM.gif">
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Página de Recetas</p>
+    </footer>
+
+</body>
+</html>
